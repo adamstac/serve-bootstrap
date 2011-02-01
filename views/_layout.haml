@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %title Serve Bootstrap
+    %link{:href => "stylesheets/application.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %script{:type => "text/javascript", :src => "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "javascripts/application.js"}
+  %body
+    .grid-container
+      .grid-12.grid-prefix-6.grid-suffix-6
+        = yield

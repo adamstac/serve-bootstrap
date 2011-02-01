@@ -1,0 +1,29 @@
+@import base
+
+// Configure grid coordinates
+$grid-columns: 24
+$grid-width: 30px
+$grid-gutter-width: 10px
+
+@import grid-coordinates
+
++grid-coordinates
+
+body
+  @extend .font-helvetica
+  background: white
+  font-size: 12px
+  padding: 40px
+
+h1
+  font-size: 30px
+  font-weight: bold
+  margin-bottom: 20px
+
+p
+  color: #444
+  font-size: 14px
+  line-height: 1.4
+  margin-bottom: 14px
+  &:last-child
+    margin-bottom: 0
