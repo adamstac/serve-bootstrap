@@ -1,16 +1,15 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
- 
- 
+/* the humans responsible - humanstxt.org */
+
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
- 
+  Name: 
+  Title: 
+  Site: 
+  Twitter: 
+  Location: 
+
 /* THANKS */
   Name: URL
- 
+
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
