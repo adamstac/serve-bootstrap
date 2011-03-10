@@ -1,0 +1,69 @@
+// Non-semantic helper classes
+
+// Credit where credit is due
+// Much inspiration was taken from the HTML5 Boilerplate
+
+// For image replacement
+.ir
+  display: block
+  text-indent: -999em
+  overflow: hidden
+  background-repeat: no-repeat
+  text-align: left
+  direction: ltr
+
+.image-replacement
+  @extend .ir
+
+// Hide for both screenreaders and browsers:
+// css-discuss.incutio.com/wiki/Screenreader_Visibility
+
+.hidden
+  display: none
+  visibility: hidden
+
+// Hide visually only but have it available for screenreaders by Jon Neal
+// webaim.org/techniques/css/invisiblecontent also j.mp/visuallyhidden
+
+.visuallyhidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+  &.focusable
+    &:active, &:focus
+      clip: auto
+      height: auto
+      margin: 0
+      overflow: visible
+      position: static
+      width: auto
+
+.visually-hidden, .vh
+  @extend .visuallyhidden
+
+// Hide visually and from screenreaders but maintain layout
+
+.invisible
+  visibility: hidden
+
+// The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements.
+// j.mp/bestclearfix
+
+.clearfix
+  &:before
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden
+  &:after
+    content: "\0020"
+    display: block
+    height: 0
+    overflow: hidden
+    clear: both
+  zoom: 1

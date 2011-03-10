@@ -1,0 +1,32 @@
+@import base
+
+// Configure grid coordinates
+$grid-columns: 24
+$grid-width: 30px
+$grid-gutter-width: 10px
+
+@import grid-coordinates
+
++grid-coordinates
+
+@import screen
+@import portrait
+@import landscape
+@import mobile-480
+
+// Media queries for responsive design
+// These follow after primary styles so they will successfully override
+
+@media all and (orientation:portrait)
+  +portrait
+
+@media all and (orientation:landscape)
+  +landscape
+
+// Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
+@media screen and (max-device-width: 480px)
+  +mobile-480
+  // Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust
+  html
+    -webkit-text-size-adjust: none
+    -ms-text-size-adjust: none

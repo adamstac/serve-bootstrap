@@ -1,14 +1,10 @@
-@import base
-
-// Configure grid coordinates
-$grid-columns: 24
-$grid-width: 30px
-$grid-gutter-width: 10px
-
-@import grid-coordinates
-
-+grid-coordinates
-
+.container
+  @extend .grid-container
+  .content
+    @extend .grid-12
+    @extend .grid-prefix-6
+    @extend .grid-suffix-6 
+  
 body
   @extend .font-helvetica
   background: white
