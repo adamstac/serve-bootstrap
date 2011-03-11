@@ -49,9 +49,12 @@ There are a few helper Rake tasks that will aid you in clearing and compiling yo
 
     rake -T
 
-    rake generate        # Generate a new project at dir=foo
-    rake styles:clear    # Clears the stylesheets
-    rake styles:compile  # Clears and compiles the stylesheets
+    rake generate                   # Generate a new project at dir=foo
+    rake styles:clear               # Clear the styles
+    rake styles:compile             # Compile new styles
+    rake styles:compile:production  # Compile new styles for production
+    rake styles:stats               # Run compass stats
+    rake styles:stats:log           # Create a log of compass stats
 
 ## Rack and Passenger
 
