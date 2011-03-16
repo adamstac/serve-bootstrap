@@ -175,14 +175,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: red;
+  color: green;
   text-decoration: none;
 }
 a:active, a:visited {
-  color: red;
+  color: green;
 }
 a:hover {
-  color: #ff3333;
+  color: #00b300;
   text-decoration: underline;
 }
 a:focus, a:active {
@@ -243,10 +243,10 @@ a:focus, a:active {
   clear: both;
 }
 
-.grid-pie-clearfix, .grid-container, .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .container .content, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
+.grid-pie-clearfix, .grid-container, .container, .nested-grid-container, .grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .container .content, p.last, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
   *zoom: 1;
 }
-.grid-pie-clearfix:after, .grid-container:after, .container:after, .nested-grid-container:after, .grid-block:after, .grid-full:after, .grid-1:after, .grid-2:after, .grid-3:after, .grid-4:after, .grid-5:after, .grid-6:after, .grid-7:after, .grid-8:after, .grid-9:after, .grid-10:after, .grid-11:after, .grid-12:after, .grid-13:after, .grid-14:after, .grid-15:after, .grid-16:after, .container .content:after, .grid-17:after, .grid-18:after, .grid-19:after, .grid-20:after, .grid-21:after, .grid-22:after, .grid-23:after, .grid-24:after {
+.grid-pie-clearfix:after, .grid-container:after, .container:after, .nested-grid-container:after, .grid-block:after, .grid-full:after, .grid-1:after, .grid-2:after, .grid-3:after, .grid-4:after, .grid-5:after, .grid-6:after, .grid-7:after, .grid-8:after, .grid-9:after, .grid-10:after, .grid-11:after, .grid-12:after, .grid-13:after, .grid-14:after, .grid-15:after, .grid-16:after, .container .content:after, p.last:after, .grid-17:after, .grid-18:after, .grid-19:after, .grid-20:after, .grid-21:after, .grid-22:after, .grid-23:after, .grid-24:after {
   content: "\0020";
   display: block;
   height: 0;
@@ -267,7 +267,7 @@ a:focus, a:active {
   width: auto;
 }
 
-.grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .container .content, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
+.grid-block, .grid-full, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .container .content, p.last, .grid-17, .grid-18, .grid-19, .grid-20, .grid-21, .grid-22, .grid-23, .grid-24 {
   display: inline;
   float: left;
   position: relative;
@@ -338,7 +338,7 @@ a:focus, a:active {
   width: 590px;
 }
 
-.grid-16, .container .content {
+.grid-16, .container .content, p.last {
   width: 630px;
 }
 
@@ -386,7 +386,7 @@ a:focus, a:active {
   padding-left: 120px;
 }
 
-.grid-prefix-4, .container .content {
+.grid-prefix-4, .container .content, p.last {
   padding-left: 160px;
 }
 
@@ -478,7 +478,7 @@ a:focus, a:active {
   padding-right: 120px;
 }
 
-.grid-suffix-4, .container .content {
+.grid-suffix-4, .container .content, p.last {
   padding-right: 160px;
 }
 
@@ -779,6 +779,7 @@ p:last-child {
   .container {
     margin: 0;
     padding: 40px 30px;
+    padding-top: 150px;
     width: auto;
   }
   .container .content {
@@ -791,10 +792,32 @@ p:last-child {
     margin-bottom: 80px;
   }
 
+  ul {
+    padding: 40px 0 0 40px;
+  }
+  ul li {
+    font-size: 40px;
+  }
+
   p {
     font-size: 60px;
     line-height: 1.2;
     margin-bottom: 20px;
+  }
+  p.last {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 40px;
+    text-align: center;
+    width: 100%;
+  }
+  p.last a {
+    color: white;
   }
 }
 
