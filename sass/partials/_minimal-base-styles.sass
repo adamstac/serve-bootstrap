@@ -6,8 +6,9 @@
 @import compass/css3
 @import partials/typography
 
-$base-link-color: #256
-$base-link-color-hover: #036
+$base-font-size: 14px
+$base-link-color: red
+$base-link-color-hover: lighten(red,10)
 $base-form-text-color: #444
 $webkit-tap-highlight-color: #59bef2
 $invalid-box-shadow-color: red
@@ -149,6 +150,7 @@ body, select, input, textarea
   color: $base-form-text-color
   // Set your base font here, to apply evenly
   font-family: "Helvetica-Neue", Helvetica, Arial, sans-serif
+  font-size: $base-font-size
 
 // Bold the headers
 
@@ -157,7 +159,12 @@ h1, h2, h3, h4, h5, h6
 
 a
   color: $base-link-color
+  text-decoration: none
   &:active, &:visited
     color: $base-link-color
   &:hover
     color: $base-link-color-hover
+    text-decoration: underline
+  &:focus, &:active
+    outline: none
+    
