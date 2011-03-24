@@ -13,6 +13,16 @@ $base-form-text-color: #444
 $webkit-tap-highlight-color: #59bef2
 $invalid-box-shadow-color: red
 
+// Links
+a
+  color: $base-link-color
+  text-decoration: none
+  &:hover
+    color: $base-link-color-hover
+    text-decoration: underline
+  &:focus, &:active
+    outline: none
+
 // Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test
 
 a
@@ -156,15 +166,3 @@ body, select, input, textarea
 
 h1, h2, h3, h4, h5, h6
   font-weight: bold
-
-a
-  color: $base-link-color
-  text-decoration: none
-  &:active, &:visited
-    color: $base-link-color
-  &:hover
-    color: $base-link-color-hover
-    text-decoration: underline
-  &:focus, &:active
-    outline: none
-    
