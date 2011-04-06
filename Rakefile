@@ -29,6 +29,11 @@ namespace :styles do
   desc "Clear the styles"
   task :clear => ["compile:clear"]
   
+  desc "List the styles"
+  task :list do
+    system "ls -lh public/stylesheets"
+  end
+  
   desc "Compile new styles"
   task :compile => ["compile:default"]
 
