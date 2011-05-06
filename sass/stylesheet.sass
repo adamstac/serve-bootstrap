@@ -1,30 +1,45 @@
 @import base
 
-@import screen
-@import portrait
-@import landscape
-@import mobile-480
+// Configure grid coordinates
+$grid-columns: 24
+$grid-width: 30px
+$grid-gutter-width: 10px
 
-// Media queries for responsive design
-// These follow after primary styles so they will successfully override
+@import grid-coordinates
 
-@media all and (orientation:portrait)
-  +portrait
++grid-coordinates
 
-@media all and (orientation:landscape)
-  +landscape
+.container
+  @extend .grid-container
+  .content
+    @extend .grid-16
+    @extend .grid-prefix-4
+    @extend .grid-suffix-4 
+  
+body
+  @extend .font-helvetica
+  background: white
+  padding-top: 40px
 
-// Grade-A Mobile Browsers (Opera Mobile, Mobile Safari, Android Chrome)
-@media screen and (max-device-width: 480px)
-  +mobile-480
-  // Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust
-  // html
-  //   -webkit-text-size-adjust: none
-  //   -ms-text-size-adjust: none
+h1
+  font-size: 30px
+  font-weight: bold
+  margin-bottom: 20px
 
-.content
-  ul
-    list-style: disc
-    margin-bottom: 15px
-    li
-      line-height: 1.5
+p
+  color: #444
+  font-size: 14px
+  line-height: 1.4
+  margin-bottom: 14px
+  &:last-child
+    margin-bottom: 0
+  &.last
+    @extend .grid-16
+    @extend .grid-prefix-4
+    @extend .grid-suffix-4 
+
+ul
+  list-style: disc
+  margin-bottom: 15px
+  li
+    line-height: 1.5

@@ -14,13 +14,13 @@ root = ::File.dirname(__FILE__)
 
 # Set the haml options
 # http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html#options
-class Haml::Engine
-  alias old_initialize initialize
-  def initialize(lines, options)
-    options.update(:format => :html5)
-    old_initialize(lines, options)
-  end
-end
+# class Haml::Engine
+#   alias old_initialize initialize
+#   def initialize(lines, options)
+#     options.update(:format => :html5)
+#     old_initialize(lines, options)
+#   end
+# end
 
 # Compass
 Compass.add_project_configuration(root + '/config.rb')

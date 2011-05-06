@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -165,10 +164,10 @@ input:invalid, textarea:invalid {
   -ms-border-radius: 1px;
   -khtml-border-radius: 1px;
   border-radius: 1px;
-  -moz-box-shadow: red 0px 0px 5px 0;
-  -webkit-box-shadow: red 0px 0px 5px 0;
-  -o-box-shadow: red 0px 0px 5px 0;
-  box-shadow: red 0px 0px 5px 0;
+  -moz-box-shadow: red 0px 0px 5px;
+  -webkit-box-shadow: red 0px 0px 5px;
+  -o-box-shadow: red 0px 0px 5px;
+  box-shadow: red 0px 0px 5px;
 }
 
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
@@ -475,6 +474,98 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 920px;
 }
 
+.grid-prefix-margin-1 {
+  margin-left: 45px;
+}
+
+.grid-prefix-margin-2 {
+  margin-left: 85px;
+}
+
+.grid-prefix-margin-3 {
+  margin-left: 125px;
+}
+
+.grid-prefix-margin-4 {
+  margin-left: 165px;
+}
+
+.grid-prefix-margin-5 {
+  margin-left: 205px;
+}
+
+.grid-prefix-margin-6 {
+  margin-left: 245px;
+}
+
+.grid-prefix-margin-7 {
+  margin-left: 285px;
+}
+
+.grid-prefix-margin-8 {
+  margin-left: 325px;
+}
+
+.grid-prefix-margin-9 {
+  margin-left: 365px;
+}
+
+.grid-prefix-margin-10 {
+  margin-left: 405px;
+}
+
+.grid-prefix-margin-11 {
+  margin-left: 445px;
+}
+
+.grid-prefix-margin-12 {
+  margin-left: 485px;
+}
+
+.grid-prefix-margin-13 {
+  margin-left: 525px;
+}
+
+.grid-prefix-margin-14 {
+  margin-left: 565px;
+}
+
+.grid-prefix-margin-15 {
+  margin-left: 605px;
+}
+
+.grid-prefix-margin-16 {
+  margin-left: 645px;
+}
+
+.grid-prefix-margin-17 {
+  margin-left: 685px;
+}
+
+.grid-prefix-margin-18 {
+  margin-left: 725px;
+}
+
+.grid-prefix-margin-19 {
+  margin-left: 765px;
+}
+
+.grid-prefix-margin-20 {
+  margin-left: 805px;
+}
+
+.grid-prefix-margin-21 {
+  margin-left: 845px;
+}
+
+.grid-prefix-margin-22 {
+  margin-left: 885px;
+}
+
+.grid-prefix-margin-23 {
+  margin-left: 925px;
+}
+
 .grid-suffix-1 {
   padding-right: 40px;
 }
@@ -565,6 +656,98 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-suffix-23 {
   padding-right: 920px;
+}
+
+.grid-suffix-margin-1 {
+  margin-right: 45px;
+}
+
+.grid-suffix-margin-2 {
+  margin-right: 85px;
+}
+
+.grid-suffix-margin-3 {
+  margin-right: 125px;
+}
+
+.grid-suffix-margin-4 {
+  margin-right: 165px;
+}
+
+.grid-suffix-margin-5 {
+  margin-right: 205px;
+}
+
+.grid-suffix-margin-6 {
+  margin-right: 245px;
+}
+
+.grid-suffix-margin-7 {
+  margin-right: 285px;
+}
+
+.grid-suffix-margin-8 {
+  margin-right: 325px;
+}
+
+.grid-suffix-margin-9 {
+  margin-right: 365px;
+}
+
+.grid-suffix-margin-10 {
+  margin-right: 405px;
+}
+
+.grid-suffix-margin-11 {
+  margin-right: 445px;
+}
+
+.grid-suffix-margin-12 {
+  margin-right: 485px;
+}
+
+.grid-suffix-margin-13 {
+  margin-right: 525px;
+}
+
+.grid-suffix-margin-14 {
+  margin-right: 565px;
+}
+
+.grid-suffix-margin-15 {
+  margin-right: 605px;
+}
+
+.grid-suffix-margin-16 {
+  margin-right: 645px;
+}
+
+.grid-suffix-margin-17 {
+  margin-right: 685px;
+}
+
+.grid-suffix-margin-18 {
+  margin-right: 725px;
+}
+
+.grid-suffix-margin-19 {
+  margin-right: 765px;
+}
+
+.grid-suffix-margin-20 {
+  margin-right: 805px;
+}
+
+.grid-suffix-margin-21 {
+  margin-right: 845px;
+}
+
+.grid-suffix-margin-22 {
+  margin-right: 885px;
+}
+
+.grid-suffix-margin-23 {
+  margin-right: 925px;
 }
 
 .grid-push-1 {
@@ -660,95 +843,95 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .grid-pull-1 {
-  left: -40px;
+  left: -20px;
 }
 
 .grid-pull-2 {
-  left: -80px;
+  left: -40px;
 }
 
 .grid-pull-3 {
-  left: -120px;
+  left: -60px;
 }
 
 .grid-pull-4 {
-  left: -160px;
+  left: -80px;
 }
 
 .grid-pull-5 {
-  left: -200px;
+  left: -100px;
 }
 
 .grid-pull-6 {
-  left: -240px;
+  left: -120px;
 }
 
 .grid-pull-7 {
-  left: -280px;
+  left: -140px;
 }
 
 .grid-pull-8 {
-  left: -320px;
+  left: -160px;
 }
 
 .grid-pull-9 {
-  left: -360px;
+  left: -180px;
 }
 
 .grid-pull-10 {
-  left: -400px;
+  left: -200px;
 }
 
 .grid-pull-11 {
-  left: -440px;
+  left: -220px;
 }
 
 .grid-pull-12 {
-  left: -480px;
+  left: -240px;
 }
 
 .grid-pull-13 {
-  left: -520px;
+  left: -260px;
 }
 
 .grid-pull-14 {
-  left: -560px;
+  left: -280px;
 }
 
 .grid-pull-15 {
-  left: -600px;
+  left: -300px;
 }
 
 .grid-pull-16 {
-  left: -640px;
+  left: -320px;
 }
 
 .grid-pull-17 {
-  left: -680px;
+  left: -340px;
 }
 
 .grid-pull-18 {
-  left: -720px;
+  left: -360px;
 }
 
 .grid-pull-19 {
-  left: -760px;
+  left: -380px;
 }
 
 .grid-pull-20 {
-  left: -800px;
+  left: -400px;
 }
 
 .grid-pull-21 {
-  left: -840px;
+  left: -420px;
 }
 
 .grid-pull-22 {
-  left: -880px;
+  left: -440px;
 }
 
 .grid-pull-23 {
-  left: -920px;
+  left: -460px;
 }
 
 body {
@@ -772,68 +955,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
-@media all and (orientation:portrait) {
-  /* Portrait styles */
-}
-
-@media all and (orientation:landscape) {
-  /* landscape styles */
-}
-
-@media screen and (max-device-width: 480px) {
-  body {
-    padding: 0;
-  }
-
-  .container {
-    margin: 0;
-    padding: 40px 30px;
-    padding-top: 150px;
-    width: auto;
-  }
-  .container .content {
-    padding: 0;
-    width: auto;
-  }
-
-  h1 {
-    font-size: 180px;
-    margin-bottom: 80px;
-  }
-
-  ul {
-    padding: 40px 0 0 40px;
-  }
-  ul li {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 60px;
-    line-height: 1.2;
-    margin-bottom: 20px;
-  }
-  p.last {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: green;
-    display: block;
-    font-weight: bold;
-    margin: 0;
-    padding: 20px 40px;
-    text-align: center;
-    width: 100%;
-  }
-  p.last a {
-    color: white;
-  }
-}
-
-.content ul {
+ul {
   list-style: disc;
   margin-bottom: 15px;
 }
-.content ul li {
+ul li {
   line-height: 1.5;
 }
