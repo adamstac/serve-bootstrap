@@ -1,7 +1,6 @@
 # Compass Configuration
 
 require 'grid-coordinates'
-require 'meyer-reset'
 
 # HTTP paths
 http_path             = '/'
