@@ -10,7 +10,6 @@ Supports:
 * [Sass](http://sass-lang.com/)
 * [Compass](https://github.com/chriseppstein/compass)
 * [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
-* [Meyer Reset](https://github.com/adamstac/meyer-reset)
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://www.modernizr.com/)
 
