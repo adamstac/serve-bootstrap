@@ -2,10 +2,8 @@
 %html{html_attrs}
   %head
     %title= @title
-    %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
-    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
-    %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
-    %script{:type => "text/javascript", :src => "javascripts/application.js"}
+    = stylesheet_link_tag("/stylesheets/stylesheet.css")
+    = javascript_include_tag("http://code.jquery.com/jquery-1.5.min.js", "/javascripts/modernizr-1.6.min.js", "/javascripts/application.js")
   %body
     .container
       = yield
