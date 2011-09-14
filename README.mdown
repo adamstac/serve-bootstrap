@@ -9,9 +9,8 @@ Supports:
 * [Haml](http://haml-lang.com/)
 * [Sass](http://sass-lang.com/)
 * [Compass](https://github.com/chriseppstein/compass)
-* [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
 * [jQuery](http://jquery.com/)
-* [Modernizr](http://www.modernizr.com/)
+* [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
 
 ## What is Serve?
 
