@@ -52,6 +52,7 @@ namespace :styles do
     desc "Compile new styles for production"
     task :production => :clear do
       puts "*** Compiling styles ***"
+      system "compass clean"
       system "compass compile --output-style compressed --force"
     end
 
