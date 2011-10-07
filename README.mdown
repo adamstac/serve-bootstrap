@@ -33,7 +33,7 @@ From inside the root of your newly cloned repo, run the following at the command
 
     bundle install
 
-After you've ran `bundle install` and Serve is installed, as well as the other required gems, you can start it up like this:
+After you've ran `bundle install` and Serve is installed, as well as the other required gems, start Serve by running this from the root ofyour project:
 
     serve
 
