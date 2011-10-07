@@ -54,11 +54,6 @@ There are a few helper Rake tasks that will aid you in clearing and compiling yo
     rake styles:stats               # Run compass stats
     rake styles:stats:log           # Create a log of compass stats
 
-## Rack and Passenger
-
-Astute users may notice that this project is also a simple Rack application. This means that it is easy to deploy it on Passenger or rack it up with the `rackup` command. For more information about using Serve and Passenger read "[Racking Up A Serve Project On Phusion Passenger](http://wiseheartdesign.com/articles/2010/05/26/racking-up-a-serve-project-on-phusion-passenger/)".
-
-
 ## License
 
 Copyright (c) 2011 Adam Stacoviak
