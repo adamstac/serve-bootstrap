@@ -1,39 +1,43 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.1.0)
+    activesupport (3.2.3)
+      i18n (~> 0.6)
       multi_json (~> 1.0)
-    addressable (2.2.6)
-    chunky_png (1.2.1)
-    compass (0.11.5)
+    addressable (2.2.8)
+    chunky_png (1.2.5)
+    compass (0.12.1)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    css_parser (1.2.5)
+    css_parser (1.2.6)
       addressable
-    fssm (0.2.7)
-    grid-coordinates (1.1.5)
-      compass (>= 0.11.5)
-    haml (3.1.3)
-    heroku (2.7.0)
+      rdoc
+    fssm (0.2.9)
+    haml (3.1.5)
+    heroku (2.25.0)
       launchy (>= 0.3.2)
+      netrc (~> 0.7.1)
       rest-client (~> 1.6.1)
       rubyzip
-      term-ansicolor (~> 1.0.5)
     i18n (0.6.0)
-    launchy (2.0.5)
+    json (1.7.3)
+    launchy (2.1.0)
       addressable (~> 2.2.6)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    mime-types (1.16)
-    multi_json (1.0.3)
-    rack (1.3.2)
+    mime-types (1.18)
+    multi_json (1.3.5)
+    netrc (0.7.1)
+    rack (1.4.1)
     rack-test (0.6.1)
       rack (>= 1.0)
+    rdoc (3.12)
+      json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rubyzip (0.9.4)
-    sass (3.1.7)
+    rubyzip (0.9.8)
+    sass (3.1.18)
     serve (1.5.1)
       activesupport (~> 3.0)
       i18n
@@ -42,19 +46,17 @@ GEM
       tilt (~> 1.3)
       tzinfo
     syntax (1.0.0)
-    term-ansicolor (1.0.6)
     tilt (1.3.3)
-    tzinfo (0.3.29)
+    tzinfo (0.3.33)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.11.5)
-  css_parser (~> 1.2.5)
-  grid-coordinates (~> 1.1.5)
-  haml (~> 3.1.3)
+  compass
+  css_parser
+  haml
   heroku
-  maruku (~> 0.6.0)
-  sass (~> 3.1.7)
-  serve (~> 1.5.1)
+  maruku
+  sass
+  serve

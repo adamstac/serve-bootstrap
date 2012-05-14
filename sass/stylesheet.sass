@@ -1,20 +1,9 @@
 @import base
 
-// Configure grid coordinates
-$grid-columns: 24
-$grid-width: 30px
-$grid-gutter-width: 10px
-
-@import grid-coordinates
-
-+grid-coordinates
-
 .container
-  @extend .grid-container
   .content
-    @extend .grid-16
-    @extend .grid-prefix-4
-    @extend .grid-suffix-4 
+    margin: 0 auto
+    width: 600px
   
 body
   @extend .font-helvetica
@@ -33,10 +22,6 @@ p
   margin-bottom: 14px
   &:last-child
     margin-bottom: 0
-  &.last
-    @extend .grid-16
-    @extend .grid-prefix-4
-    @extend .grid-suffix-4 
 
 ul
   list-style: disc
