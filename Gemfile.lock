@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.2.3)
+    activesupport (3.2.6)
       i18n (~> 0.6)
       multi_json (~> 1.0)
     addressable (2.2.8)
@@ -10,34 +10,32 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    css_parser (1.2.6)
-      addressable
-      rdoc
+    excon (0.14.1)
     fssm (0.2.9)
-    haml (3.1.5)
-    heroku (2.25.0)
+    haml (3.1.6)
+    heroku (2.28.0)
+      heroku-api (~> 0.2.5)
       launchy (>= 0.3.2)
-      netrc (~> 0.7.1)
+      netrc (~> 0.7.4)
       rest-client (~> 1.6.1)
       rubyzip
+    heroku-api (0.2.5)
+      excon (~> 0.14.0)
     i18n (0.6.0)
-    json (1.7.3)
     launchy (2.1.0)
       addressable (~> 2.2.6)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    mime-types (1.18)
-    multi_json (1.3.5)
-    netrc (0.7.1)
+    mime-types (1.19)
+    multi_json (1.3.6)
+    netrc (0.7.4)
     rack (1.4.1)
     rack-test (0.6.1)
       rack (>= 1.0)
-    rdoc (3.12)
-      json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rubyzip (0.9.8)
-    sass (3.1.18)
+    rubyzip (0.9.9)
+    sass (3.2.0.alpha.247)
     serve (1.5.1)
       activesupport (~> 3.0)
       i18n
@@ -54,9 +52,8 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  css_parser
   haml
   heroku
   maruku
-  sass
+  sass (~> 3.2.0.alpha.247)
   serve
