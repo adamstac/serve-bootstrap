@@ -1,5 +1,6 @@
 source :rubygems
 
+gem 'rake'
 gem 'serve'
 gem 'haml'
 gem 'sass'
