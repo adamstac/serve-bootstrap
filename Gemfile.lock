@@ -55,5 +55,5 @@ DEPENDENCIES
   haml
   heroku
   maruku
-  sass (~> 3.2.0.alpha.247)
+  sass
   serve
